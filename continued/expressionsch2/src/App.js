@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+let a= 1;
+let b = 2;
+let c = (a,b) => {
+  return a+b
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <>
+    <h1>This is how tou use javascript variables in React</h1>
+    <p>Adding {a} and {b} is {c(a,b)}</p>
+    <p>Multiplying {a} and {b} gives {a*b}</p>
+    <p>Divinding {a} and {b} gives {a/b}</p>
+    <p>Subtracting {a} and {b} gives {a-b}</p>
+    </>
+  )
 }
 
 export default App;
